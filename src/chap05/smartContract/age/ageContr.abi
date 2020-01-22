@@ -1,0 +1,25 @@
+[
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "x",
+				"type": "uint32"
+			},
+			{
+				"name": "y",
+				"type": "bool"
+			}
+		],
+		"name": "isAdult",
+		"outputs": [
+			{
+				"name": "r",
+				"type": "bool"
+			}
+		],
+		"payable": false,
+		"stateMutability": "pure",
+		"type": "function"
+	}
+]

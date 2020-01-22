@@ -1,0 +1,239 @@
+[
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"name": "proposals",
+		"outputs": [
+			{
+				"name": "pName",
+				"type": "string"
+			},
+			{
+				"name": "pCtx",
+				"type": "string"
+			},
+			{
+				"name": "chairperson",
+				"type": "address"
+			},
+			{
+				"name": "voteCount",
+				"type": "uint256"
+			},
+			{
+				"name": "initialized",
+				"type": "bool"
+			},
+			{
+				"name": "limitTime",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "_pName",
+				"type": "string"
+			},
+			{
+				"name": "_pCtx",
+				"type": "string"
+			},
+			{
+				"name": "_limitTime",
+				"type": "uint256"
+			}
+		],
+		"name": "createProposal",
+		"outputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "pId",
+				"type": "uint256"
+			}
+		],
+		"name": "getProposalVCnt",
+		"outputs": [
+			{
+				"name": "v",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "pId",
+				"type": "uint256"
+			}
+		],
+		"name": "getProposalCtx",
+		"outputs": [
+			{
+				"name": "s",
+				"type": "string"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "pId",
+				"type": "uint256"
+			},
+			{
+				"name": "voterAddr",
+				"type": "address"
+			}
+		],
+		"name": "queryVoting",
+		"outputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "pId",
+				"type": "uint256"
+			}
+		],
+		"name": "getProposalName",
+		"outputs": [
+			{
+				"name": "s",
+				"type": "string"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "pId",
+				"type": "uint256"
+			}
+		],
+		"name": "getProposalLimit",
+		"outputs": [
+			{
+				"name": "t",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "getBlockTime",
+		"outputs": [
+			{
+				"name": "t",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "pId",
+				"type": "uint256"
+			}
+		],
+		"name": "doVoting",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": true,
+				"name": "eventType",
+				"type": "string"
+			},
+			{
+				"indexed": false,
+				"name": "_voter",
+				"type": "address"
+			},
+			{
+				"indexed": false,
+				"name": "timestamp",
+				"type": "uint256"
+			}
+		],
+		"name": "VoteEvt",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": true,
+				"name": "eventType",
+				"type": "string"
+			},
+			{
+				"indexed": false,
+				"name": "_proposalId",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"name": "_limitTime",
+				"type": "uint256"
+			}
+		],
+		"name": "ProposeEvt",
+		"type": "event"
+	}
+]

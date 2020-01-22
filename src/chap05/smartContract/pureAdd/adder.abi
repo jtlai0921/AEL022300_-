@@ -1,0 +1,25 @@
+[
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "in01",
+				"type": "uint256"
+			},
+			{
+				"name": "in02",
+				"type": "uint256"
+			}
+		],
+		"name": "doAdd",
+		"outputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "pure",
+		"type": "function"
+	}
+]

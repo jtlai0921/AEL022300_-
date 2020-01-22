@@ -1,0 +1,51 @@
+[
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "a",
+				"type": "bytes"
+			},
+			{
+				"name": "b",
+				"type": "bool"
+			},
+			{
+				"name": "c",
+				"type": "uint256[]"
+			}
+		],
+		"name": "fun",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": true,
+				"name": "_from",
+				"type": "address"
+			},
+			{
+				"indexed": false,
+				"name": "a",
+				"type": "bytes"
+			},
+			{
+				"indexed": false,
+				"name": "b",
+				"type": "bool"
+			},
+			{
+				"indexed": false,
+				"name": "c",
+				"type": "uint256[]"
+			}
+		],
+		"name": "recEvn",
+		"type": "event"
+	}
+]

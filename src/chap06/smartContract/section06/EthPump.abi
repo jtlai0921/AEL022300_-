@@ -1,0 +1,325 @@
+[
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "stickName",
+				"type": "string"
+			},
+			{
+				"name": "inx",
+				"type": "uint256"
+			}
+		],
+		"name": "isGoodsLend",
+		"outputs": [
+			{
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "queryBalance",
+		"outputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "stickName",
+				"type": "string"
+			},
+			{
+				"name": "inx",
+				"type": "uint256"
+			}
+		],
+		"name": "doGoodsReturn",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "stickName",
+				"type": "string"
+			}
+		],
+		"name": "isStickExist",
+		"outputs": [
+			{
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "stickName",
+				"type": "string"
+			},
+			{
+				"name": "inx",
+				"type": "uint256"
+			}
+		],
+		"name": "isGoodsAvailable",
+		"outputs": [
+			{
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "stickName",
+				"type": "string"
+			},
+			{
+				"name": "inx",
+				"type": "uint256"
+			}
+		],
+		"name": "borrowGoods",
+		"outputs": [],
+		"payable": true,
+		"stateMutability": "payable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "stickName",
+				"type": "string"
+			}
+		],
+		"name": "addSticker",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "stickName",
+				"type": "string"
+			},
+			{
+				"name": "inx",
+				"type": "uint256"
+			}
+		],
+		"name": "queryBorrower",
+		"outputs": [
+			{
+				"name": "",
+				"type": "address"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "stickName",
+				"type": "string"
+			},
+			{
+				"name": "inx",
+				"type": "uint256"
+			},
+			{
+				"name": "available",
+				"type": "bool"
+			}
+		],
+		"name": "setGoodsStatus",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "stickName",
+				"type": "string"
+			},
+			{
+				"name": "ethPledge",
+				"type": "uint256"
+			},
+			{
+				"name": "available",
+				"type": "bool"
+			}
+		],
+		"name": "addGoods",
+		"outputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "stickName",
+				"type": "string"
+			},
+			{
+				"name": "inx",
+				"type": "uint256"
+			}
+		],
+		"name": "isGoodExist",
+		"outputs": [
+			{
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "constructor"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": true,
+				"name": "eventType",
+				"type": "string"
+			},
+			{
+				"indexed": false,
+				"name": "stickName",
+				"type": "string"
+			}
+		],
+		"name": "addStickerEvnt",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": true,
+				"name": "eventType",
+				"type": "string"
+			},
+			{
+				"indexed": false,
+				"name": "stickName",
+				"type": "string"
+			},
+			{
+				"indexed": false,
+				"name": "inx",
+				"type": "uint256"
+			}
+		],
+		"name": "addGoodsEvnt",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": true,
+				"name": "eventType",
+				"type": "string"
+			},
+			{
+				"indexed": false,
+				"name": "stickName",
+				"type": "string"
+			},
+			{
+				"indexed": false,
+				"name": "inx",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"name": "borrower",
+				"type": "address"
+			}
+		],
+		"name": "borrowGoodsEvnt",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": true,
+				"name": "eventType",
+				"type": "string"
+			},
+			{
+				"indexed": false,
+				"name": "stickName",
+				"type": "string"
+			},
+			{
+				"indexed": false,
+				"name": "inx",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"name": "borrower",
+				"type": "address"
+			}
+		],
+		"name": "returnGoodsEvnt",
+		"type": "event"
+	}
+]

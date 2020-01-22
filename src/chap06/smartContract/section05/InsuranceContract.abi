@@ -1,0 +1,230 @@
+[
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "patientAddr",
+				"type": "address"
+			},
+			{
+				"name": "name",
+				"type": "string"
+			},
+			{
+				"name": "addr",
+				"type": "string"
+			}
+		],
+		"name": "insPatient",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "patientAddr",
+				"type": "address"
+			},
+			{
+				"name": "symptom",
+				"type": "string"
+			},
+			{
+				"name": "cause",
+				"type": "string"
+			},
+			{
+				"name": "day",
+				"type": "uint256"
+			},
+			{
+				"name": "money",
+				"type": "uint256"
+			}
+		],
+		"name": "insRecord",
+		"outputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "_hospital",
+				"type": "address"
+			}
+		],
+		"name": "setHospital",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "constructor"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": true,
+				"name": "eventType",
+				"type": "string"
+			},
+			{
+				"indexed": false,
+				"name": "patientAddr",
+				"type": "address"
+			}
+		],
+		"name": "InsPatientEvnt",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": true,
+				"name": "eventType",
+				"type": "string"
+			},
+			{
+				"indexed": false,
+				"name": "patientAddr",
+				"type": "address"
+			},
+			{
+				"indexed": false,
+				"name": "recordID",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"name": "day",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"name": "money",
+				"type": "uint256"
+			}
+		],
+		"name": "InsRecordEvnt",
+		"type": "event"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "getHospital",
+		"outputs": [
+			{
+				"name": "",
+				"type": "address"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "patientAddr",
+				"type": "address"
+			}
+		],
+		"name": "isPatientExist",
+		"outputs": [
+			{
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "patientAddr",
+				"type": "address"
+			},
+			{
+				"name": "recordID",
+				"type": "uint256"
+			}
+		],
+		"name": "queryRecordCause",
+		"outputs": [
+			{
+				"name": "",
+				"type": "string"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "patientAddr",
+				"type": "address"
+			},
+			{
+				"name": "recordID",
+				"type": "uint256"
+			}
+		],
+		"name": "queryRecordDays",
+		"outputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "patientAddr",
+				"type": "address"
+			},
+			{
+				"name": "recordID",
+				"type": "uint256"
+			}
+		],
+		"name": "queryRecordMoney",
+		"outputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	}
+]

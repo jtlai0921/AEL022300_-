@@ -1,0 +1,33 @@
+[
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "a",
+				"type": "fixed128x80[2]"
+			}
+		],
+		"name": "fun2",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": true,
+				"name": "_from",
+				"type": "address"
+			},
+			{
+				"indexed": false,
+				"name": "a",
+				"type": "fixed128x80[2]"
+			}
+		],
+		"name": "recEvn",
+		"type": "event"
+	}
+]
